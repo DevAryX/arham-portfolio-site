@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Meta Info -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Arham Hamid">
+  <meta name="description" content="Arham Hamid’s personal developer portfolio showcasing AI, automation, and Python-based projects.">
+
+  <!-- Title -->
+  <title>Contact Me</title>
+
+  <!-- Favicon & Fonts -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles & Icons -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Contact</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Contact Form -->
+  <main>
+    <section class="fade-section">
+      <h2 id="main-heading" data-aos="fade-up" data-aos-duration="1000">Get in Touch</h2>
+
+      <form>
+        <label><i class="fas fa-user"></i> Name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label><i class="fas fa-envelope"></i> Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label><i class="fas fa-comment"></i> Message:</label><br>
+        <textarea rows="4" cols="30"></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Utility Buttons -->
+      <div class="buttons">
+        <button onclick="changeHeading()">Surprise Me</button>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <a href="assets/cv.pdf" download>
+          <button>📄 Download My CV</button>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Arham Hamid</p>
+      <p>Email: <a href="mailto:arhm@gmail.com">arhm@gmail.com</a></p>
+      <p>Phone: <a href="tel:+447491347347">+44 7491 347347</a></p>
+    </div>
+  </footer>
+</body>
+</html>

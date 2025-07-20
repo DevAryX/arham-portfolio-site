@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Meta Info -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Arham Hamid">
+  <meta name="description" content="Arham Hamid’s personal developer portfolio showcasing AI, automation, and Python-based projects.">
+
+  <!-- Title -->
+  <title>My Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Preloader Spinner -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1 id="main-heading">
+      <span id="typed-text"></span>Welcome to My Portfolio
+    </h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Intro Section -->
+    <section class="fade-section">
+      <h2 data-aos="fade-up" data-aos-duration="1000">Intro</h2>
+      <p>
+        Hello, I’m <strong>Arham Hamid</strong> — an aspiring software developer exploring web, AI, and automation projects.
+      </p>
+      <img src="images/profile.png" alt="Profile photo of Arham Hamid, teenage developer" style="max-width: 200px; border-radius: 50%;">
+    </section>
+
+    <!-- Chatbot Section -->
+    <section class="fade-section">
+      <h2 data-aos="fade-up">Arham's Smart Assistant</h2>
+      <div class="chat-wrapper">
+        <div id="chat-box" class="chat-box"></div>
+        <input type="text" id="userInput" placeholder="Ask me anything..." onkeypress="handleChat(event)">
+      </div>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="fade-section">
+      <h2>Quick Buttons</h2>
+      <div class="buttons">
+        <button onclick="changeHeading()">Change Heading</button>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <a href="assets/cv.pdf" download>
+          <button>📄 Download My CV</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Quranic Wisdom Section -->
+    <section class="fade-section">
+      <h2 data-aos="fade-up">Quranic Wisdom</h2>
+      <div class="dua-box" id="daily-dua">
+        “Indeed, with hardship comes ease.” <span>(Qur'an 94:6)</span>
+      </div>
+      <button onclick="newDua()">Show Another</button>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Arham Hamid</p>
+      <p>Email: <a href="mailto:arhm@gmail.com">arhm@gmail.com</a></p>
+      <p>Phone: <a href="tel:+447491347347">+44 7491 347347</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# System & Editor Junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Future Build Output
+dist/
+build/
+
+# Optional/Secret Files
+.env
+
+# Node (if you add frontend tooling later)
+node_modules/

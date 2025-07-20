@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Meta Info -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Arham Hamid">
+  <meta name="description" content="Arham Hamid’s personal developer portfolio showcasing AI, automation, and Python-based projects.">
+
+  <!-- Title -->
+  <title>My Projects</title>
+
+  <!-- Fonts & Favicon -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>My Projects</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Projects Section -->
+  <main>
+    <section class="fade-section">
+      <h2 id="main-heading" data-aos="fade-up" data-aos-duration="1000">My Projects</h2>
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images/Chatbot2.0.png" alt="Chatbot Project Screenshot" class="project-img">
+        <h3>Python Chatbot</h3>
+        <p>Logic-based chatbot that remembers your name and mood, and gives motivational responses.</p>
+        <p><strong>Tech:</strong> Python, if-else, file I/O</p>
+        <p><a href="https://github.com/AryGrimReaper/arham-portfolio-projects/blob/main/WEEK%203-4/Chatbot2.0/Chat2.0.py" target="_blank">View Code</a></p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="images/StockPredictor.png" alt="Stock Predictor" class="project-img">
+        <h3>Stock Predictor</h3>
+        <p>Predicts stock movement using Logistic Regression and historical yFinance data.</p>
+        <p><strong>Tech:</strong> Python, sklearn, matplotlib, pandas</p>
+        <p><a href="https://github.com/AryGrimReaper/arham-portfolio-projects/blob/main/WEEK%203-4/Stock Predictor/Stocker.py" target="_blank">View Code</a></p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="images/WeatherPredictor.png" alt="Weather Predictor App" class="project-img">
+        <h3>Weather Predictor App</h3>
+        <p>Fetches and displays live weather using an API based on city input.</p>
+        <p><strong>Tech:</strong> Python, requests, weather API</p>
+        <p><a href="https://github.com/AryGrimReaper/arham-portfolio-projects/blob/main/WEEK%203-4/Weather Predictor/wPredictor.py" target="_blank">View Code</a></p>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="images/JokeAPI.png" alt="Joke API Bot" class="project-img">
+        <h3>Joke API Bot</h3>
+        <p>Pulls random jokes from an online API and displays them in the terminal.</p>
+        <p><strong>Tech:</strong> Python, requests, JSON</p>
+        <p><a href="https://github.com/AryGrimReaper/arham-portfolio-projects/blob/main/WEEK%203-4/JokeAPI/JokeAPI.py" target="_blank">View Code</a></p>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <img src="images/PricePredictor.png" alt="Price Predictor Bot" class="project-img">
+        <h3>Price Predictor</h3>
+        <p>Estimates house prices using linear regression based on input features.</p>
+        <p><strong>Tech:</strong> Python, sklearn, matplotlib</p>
+        <p><a href="https://github.com/AryGrimReaper/arham-portfolio-projects/blob/main/WEEK%203-4/Price Predictor Bot/PricePredictor.py" target="_blank">View Code</a></p>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card">
+        <img src="images/UrduQuote.png" alt="Urdu Quote Bot" class="project-img">
+        <h3>Urdu Quote Bot</h3>
+        <p>Returns daily inspirational quotes in Urdu using a custom file-based system.</p>
+        <p><strong>Tech:</strong> Python, file handling, random</p>
+        <p><a href="https://github.com/AryGrimReaper/arham-portfolio-projects/blob/main/WEEK%203-4/Urdu Quote Bot/Urdu Quotes Program.py" target="_blank">View Code</a></p>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="project-card">
+        <img src="images/ProductivityBot.png" alt="Productivity Bot" class="project-img">
+        <h3>Productivity Bot</h3>
+        <p>Offers motivational quotes, a timer, and reminders to help stay focused.</p>
+        <p><strong>Tech:</strong> Python, ZenQuotes API, time module</p>
+        <p><a href="https://github.com/AryGrimReaper/arham-portfolio-projects/blob/main/WEEK%203-4/Productivity Bot/Productivity Bot.py" target="_blank">View Code</a></p>
+      </div>
+
+      <!-- Page Buttons -->
+      <div class="buttons">
+        <button onclick="changeHeading()">Surprise Me</button>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <a href="assets/cv.pdf" download>
+          <button>📄 Download My CV</button>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Image Lightbox Modal -->
+  <div id="lightbox" class="lightbox" style="display:none;">
+    <span class="close-btn">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Expanded Image">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Arham Hamid</p>
+      <p>Email: <a href="mailto:arhm@gmail.com">arhm@gmail.com</a></p>
+      <p>Phone: <a href="tel:+447491347347">+44 7491 347347</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
